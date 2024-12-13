@@ -1,12 +1,12 @@
 /*
 Copyright © 2024 NAME HERE <EMAIL ADDRESS>
-
 */
 package cmd
 
 import (
 	"fmt"
 
+	"github.com/isinghprasan/todo/td"
 	"github.com/spf13/cobra"
 )
 
@@ -14,13 +14,19 @@ import (
 var addCmd = &cobra.Command{
 	Use:   "add",
 	Short: "Add a new todo",
-	Long: `Add will create a new todo item in the list`,
-	Run: addRun, 
+	Long:  `Add will create a new todo item in the list`,
+	Run:   addRun,
 }
 
 func addRun(cmd *cobra.Command, args []string) {
+	items := []td.Item{}
+
 	for _, x := range args {
-		fmt.Println(x)
+		items = append(items, td.Item{Text: x})
+	}
+	err := td.SaveItems("/Users/singhprasan/projects/todo.json", items)
+	if err != nil {
+		fmt.Errorf("%v", err)
 	}
 }
 

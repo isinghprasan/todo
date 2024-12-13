@@ -1,4 +1,6 @@
 github.com/cpuguy83/go-md2man/v2 v2.0.4/go.mod h1:tgQtvFlXSQOSOSIRvRPT7W67SCa46tRHOmNcaadrF8o=
+github.com/fatih/vim-go-tutorial v0.0.0-20181010233933-3f8bbd5f5e07 h1:u17X3LNnP6pPS29Yo+eth+hjph8GL2UMSvrUUK79uKk=
+github.com/fatih/vim-go-tutorial v0.0.0-20181010233933-3f8bbd5f5e07/go.mod h1:oa6JD/5IICE+xJoCq86PlDelkA17uQrqAuEsth1dbLQ=
 github.com/inconshreveable/mousetrap v1.1.0 h1:wN+x4NVGpMsO7ErUn/mUI3vEoE6Jt13X2s0bqwp9tc8=
 github.com/inconshreveable/mousetrap v1.1.0/go.mod h1:vpF70FUmC8bwa3OWnCshd2FqLfsEA9PFc4w1p2J65bw=
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
